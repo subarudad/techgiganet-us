@@ -1,60 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// Portfolio data
-const portfolioItems = [
-  {
-    id: 1,
-    title: 'E-commerce Website Redesign',
-    category: 'UI/UX Design',
-    imageUrl: 'https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?auto=format&fit=crop&w=800&q=80',
-    description: 'Complete redesign of an e-commerce platform focusing on improving user experience and conversion rates.'
-  },
-  {
-    id: 2,
-    title: 'Financial App Interface',
-    category: 'Mobile App',
-    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    description: 'User-friendly interface for a financial management application with intuitive data visualization.'
-  },
-  {
-    id: 3,
-    title: 'Healthcare Portal',
-    category: 'Web Development',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
-    description: 'A comprehensive healthcare portal designed for both patients and healthcare providers.'
-  },
-  {
-    id: 4,
-    title: 'Travel Blog Platform',
-    category: 'Web Design',
-    imageUrl: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
-    description: 'Clean and engaging design for a travel blog platform, emphasizing visual content and readability.'
-  },
-  {
-    id: 5,
-    title: 'Restaurant Branding',
-    category: 'Branding',
-    imageUrl: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80',
-    description: 'Complete branding package for a high-end restaurant including website, menu design, and visual identity.'
-  },
-  {
-    id: 6,
-    title: 'Fitness Tracker Dashboard',
-    category: 'UI/UX Design',
-    imageUrl: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80',
-    description: 'Dashboard interface for a fitness tracking application with focus on data visualization and user engagement.'
-  }
-];
-
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const [filter, setFilter] = useState('All');
-  
-  const filteredPortfolio = filter === 'All' 
-    ? portfolioItems 
-    : portfolioItems.filter(item => item.category === filter);
   
   useEffect(() => {
     const handleScroll = () => {
