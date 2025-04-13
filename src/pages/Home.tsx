@@ -1115,7 +1115,11 @@ const Home = () => {
                 <ul className="space-y-2 text-gray-400">
                   <li className="flex items-center">
                     <span className="text-cyan-400 mr-2">▶</span>
-                    San Diego, CA
+                    Atlanta, GA
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-cyan-400 mr-2">▶</span>
+                    Washington DC
                   </li>
                   <li className="flex items-center">
                     <span className="text-cyan-400 mr-2">▶</span>
