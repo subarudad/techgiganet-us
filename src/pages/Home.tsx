@@ -207,7 +207,7 @@ const Home = () => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="#experience"
+                    href="https://www.linkedin.com/in/bruce-nguyen-4707b7/" target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center justify-center py-2 px-4 text-sm font-medium text-cyan-300 rounded bg-transparent hover:bg-cyan-900/30 transition duration-300 border border-cyan-400 shadow-[0_0_15px_rgba(0,200,255,0.2)]"
                   >
                     <span className="mr-2">&lt;</span>View Experience<span className="ml-2">/&gt;</span>
@@ -218,8 +218,227 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Portfolio/Projects Section */}
-        <section id="projects" className="pt-20 md:pt-25 lg:pt-30 pb-20 md:pb-25 lg:pb-30 bg-black">
+        {/* Experience Section */}
+        <section id="experience" className="pt-20 md:pt-25 lg:pt-30 pb-20 md:pb-25 lg:pb-30 bg-black">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full px-4">
+                <div className="mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 text-center glitch-text">EXPERIENCE<span className="font-normal text-cyan-300">[career]</span></h2>
+                  <div className="w-24 h-1 mx-auto my-6 bg-gradient-to-r from-cyan-500 to-purple-500"></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 border-l-2 border-cyan-600/30 h-full"></div>
+              
+              {/* Job 1 - Firmware Engineer */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="relative mb-16"
+              >
+                <div className="md:flex items-center">
+                  <div className="md:w-1/2 pr-10 md:text-right mb-8 md:mb-0">
+                    <div className="bg-gray-900 p-6 rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] relative inline-block">
+                      <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
+                      <h3 className="text-xl font-bold text-cyan-300 font-mono mb-1">Firmware Engineer</h3>
+                      <p className="text-white font-medium">Confidential – Remote</p>
+                      <p className="text-cyan-400 text-sm">August 2024 – Present</p>
+                    </div>
+                  </div>
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div className="w-12 h-12 rounded-full bg-black border-4 border-cyan-500 shadow-[0_0_10px_rgba(0,255,255,0.5)]"></div>
+                  </div>
+                  <div className="md:w-1/2 pl-10">
+                    <ul className="space-y-4 text-gray-300">
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Developed BLE communication protocols for a medical pump feeder device, enabling seamless iOS and Android integration.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Automated AWS CI/CD pipeline for Lambda, DynamoDB, S3, and Cognito deployment using TypeScript and AWS CDK.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Engineered a Flutter-based mobile application for iOS and Android, synchronizing real-time data with the cloud.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Developed role-based access control (RBAC) to enable different app functionalities based on user roles.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Led STM32 firmware integration for Amazon Sidewalk, enabling secure IoT communication.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.div>
+              
+              {/* Job 2 - Data Engineer */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="relative mb-16"
+              >
+                <div className="md:flex items-center">
+                  <div className="md:w-1/2 pr-10 md:text-right mb-8 md:mb-0 md:order-1">
+                    <ul className="space-y-4 text-gray-300">
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Engineered and maintained data pipelines using Apache Beam on Google Cloud Dataflow for business analytics.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Integrated authentication using GCP serverless services.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Implemented Pub/Sub messaging services for real-time distributed data exchange, enhancing system responsiveness.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Created Terraform scripts for automated deployment of cloud resources across multiple environments.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Optimized data access using Google Cloud Storage (GCS) IO connectors, reducing development overhead.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div className="w-12 h-12 rounded-full bg-black border-4 border-cyan-500 shadow-[0_0_10px_rgba(0,255,255,0.5)]"></div>
+                  </div>
+                  <div className="md:w-1/2 pl-10 md:order-0">
+                    <div className="bg-gray-900 p-6 rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] relative inline-block">
+                      <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
+                      <h3 className="text-xl font-bold text-cyan-300 font-mono mb-1">Data Engineer and Tech Lead</h3>
+                      <p className="text-white font-medium">METRO.digital – Remote</p>
+                      <p className="text-cyan-400 text-sm">May 2023 – June 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+              
+              {/* Job 3 - Engineering Consultant */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="relative mb-16"
+              >
+                <div className="md:flex items-center">
+                  <div className="md:w-1/2 pr-10 md:text-right mb-8 md:mb-0">
+                    <div className="bg-gray-900 p-6 rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] relative inline-block">
+                      <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
+                      <h3 className="text-xl font-bold text-cyan-300 font-mono mb-1">Engineering Consultant</h3>
+                      <p className="text-white font-medium">The Home Depot – Remote</p>
+                      <p className="text-cyan-400 text-sm">October 2021 – April 2023</p>
+                    </div>
+                  </div>
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div className="w-12 h-12 rounded-full bg-black border-4 border-cyan-500 shadow-[0_0_10px_rgba(0,255,255,0.5)]"></div>
+                  </div>
+                  <div className="md:w-1/2 pl-10">
+                    <ul className="space-y-4 text-gray-300">
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Designed a scalable model serving architecture leveraging Google Vertex AI and custom containers for real-time inference.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Conducted research on TensorFlow and ONNX optimizations to enhance model performance.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-cyan-400 mr-2 mt-1">▹</span>
+                        <span>Facilitated knowledge transfer and code sharing within data science teams.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.div>
+              
+              {/* Job 4 - Senior Software Engineer */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="md:flex items-center">
+                  <div className="md:w-1/2 pr-10 md:text-right mb-8 md:mb-0 md:order-1">
+                    <ul className="space-y-4 text-gray-300">
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Developed a cross-browser video player serving 5 million daily users using React.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Built a browser video plugin optimized for ad performance using HTML5 and native JavaScript.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Wrote unit tests using Enzyme and Jest to ensure code reliability.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Designed and implemented a data pipeline for vehicle data ingestion using Node.js and MongoDB.</span>
+                      </li>
+                      <li className="flex items-start md:flex-row-reverse">
+                        <span className="text-cyan-400 ml-2 md:ml-0 md:mr-2 mt-1">▹</span>
+                        <span>Mentored junior developers and led automated testing efforts in a CI/CD environment.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div className="w-12 h-12 rounded-full bg-black border-4 border-cyan-500 shadow-[0_0_10px_rgba(0,255,255,0.5)]"></div>
+                  </div>
+                  <div className="md:w-1/2 pl-10 md:order-0">
+                    <div className="bg-gray-900 p-6 rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] relative inline-block">
+                      <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
+                      <h3 className="text-xl font-bold text-cyan-300 font-mono mb-1">Senior Software Engineer</h3>
+                      <p className="text-white font-medium">Hearst Digital – Atlanta, GA</p>
+                      <p className="text-cyan-400 text-sm">March 2018 – October 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Education */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="mt-20"
+              >
+                <div className="text-center mb-10">
+                  <h3 className="text-2xl font-bold text-cyan-300 font-mono inline-block border-b-2 border-cyan-500 pb-2">Education</h3>
+                </div>
+                <div className="max-w-xl mx-auto bg-gray-900 p-6 rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] relative">
+                  <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
+                  <h4 className="text-xl font-bold text-cyan-300 font-mono mb-1">Bachelor of Science</h4>
+                  <p className="text-white font-medium">Stevens Institute of Technology, Hoboken, NJ</p>
+                  <p className="text-cyan-400 text-sm mb-4">September 1987 – June 1992</p>
+                </div>
+              </motion.div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects" className="pt-20 md:pt-25 lg:pt-30 pb-20 md:pb-25 lg:pb-30 bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               <div className="w-full px-4">
@@ -465,402 +684,292 @@ const Home = () => {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="pt-20 md:pt-25 lg:pt-30 pb-20 md:pb-25 lg:pb-30 bg-gray-900">
+        <section id="skills" className="pt-20 md:pt-25 lg:pt-30 pb-20 md:pb-25 lg:pb-30 bg-gray-950">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               <div className="w-full px-4">
                 <div className="mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 text-center glitch-text">SKILLS<span className="font-normal text-cyan-300">[technical]</span></h2>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 text-center glitch-text">SKILLS<span className="font-normal text-cyan-300">[matrix]</span></h2>
                   <div className="w-24 h-1 mx-auto my-6 bg-gradient-to-r from-cyan-500 to-purple-500"></div>
                 </div>
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Firmware & Embedded Systems */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="relative overflow-hidden rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] bg-gray-900">
-                  <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="flex-shrink-0 h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2zM9 9h6v6H9V9z" />
-                        </svg>
-                      </div>
-                      <h3 className="ml-4 text-xl font-bold text-cyan-300 font-mono">Firmware & Embedded</h3>
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">STM32</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              {/* Skills Categories Column */}
+              <div>
+                {/* Languages */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="mb-10"
+                >
+                  <h3 className="text-xl font-mono font-bold mb-4 flex items-center text-cyan-300">
+                    <span className="inline-block w-2 h-2 bg-cyan-400 mr-2 rounded-full"></span>
+                    Languages
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {['C/C++', 'C#', 'Python', 'JavaScript', 'TypeScript', 'Rust', 'SQL'].map((skill, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                      >
+                        <div className="py-2 px-4 bg-gray-900 border border-cyan-700 rounded text-cyan-200 hover:border-cyan-400 transition-colors duration-300 text-sm shadow-[0_0_15px_rgba(0,200,255,0.1)]">
+                          <span className="inline-block h-2 w-2 mr-2 rounded-full bg-cyan-400 animate-pulse"></span>{skill}
                         </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Amazon Sidewalk</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">BLE</span>
-                          <span className="text-cyan-400 font-mono text-sm">95%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '95%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">IoT</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">RTOS</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    ))}
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+                
+                {/* Frameworks & Libraries */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="mb-10"
+                >
+                  <h3 className="text-xl font-mono font-bold mb-4 flex items-center text-purple-300">
+                    <span className="inline-block w-2 h-2 bg-purple-400 mr-2 rounded-full"></span>
+                    Frameworks & Libraries
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {['React', 'Next.js', 'Node.js', 'Express', 'Django', 'Flask', 'TensorFlow', 'PyTorch', 'CUDA'].map((skill, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                      >
+                        <div className="py-2 px-4 bg-gray-900 border border-purple-700 rounded text-purple-200 hover:border-purple-400 transition-colors duration-300 text-sm shadow-[0_0_15px_rgba(180,0,255,0.1)]">
+                          <span className="inline-block h-2 w-2 mr-2 rounded-full bg-purple-400 animate-pulse"></span>{skill}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+                
+                {/* Cloud & DevOps */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-xl font-mono font-bold mb-4 flex items-center text-blue-300">
+                    <span className="inline-block w-2 h-2 bg-blue-400 mr-2 rounded-full"></span>
+                    Cloud & DevOps
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {['AWS', 'GCP', 'Azure', 'Docker', 'Kubernetes', 'CI/CD', 'Jenkins', 'Terraform', 'Git'].map((skill, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                      >
+                        <div className="py-2 px-4 bg-gray-900 border border-blue-700 rounded text-blue-200 hover:border-blue-400 transition-colors duration-300 text-sm shadow-[0_0_15px_rgba(0,100,255,0.1)]">
+                          <span className="inline-block h-2 w-2 mr-2 rounded-full bg-blue-400 animate-pulse"></span>{skill}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
               
-              {/* Mobile Development */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="relative overflow-hidden rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] bg-gray-900">
-                  <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="flex-shrink-0 h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <h3 className="ml-4 text-xl font-bold text-cyan-300 font-mono">Mobile Development</h3>
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Flutter</span>
-                          <span className="text-cyan-400 font-mono text-sm">95%</span>
+              {/* Skills Column 2 */}
+              <div>
+                {/* Hardware & IoT */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="mb-10"
+                >
+                  <h3 className="text-xl font-mono font-bold mb-4 flex items-center text-green-300">
+                    <span className="inline-block w-2 h-2 bg-green-400 mr-2 rounded-full"></span>
+                    Hardware & IoT
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {['Embedded Systems', 'STM32', 'ESP32', 'RTOS', 'PCB Design', 'BLE', 'I2C/SPI', 'FPGA'].map((skill, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                      >
+                        <div className="py-2 px-4 bg-gray-900 border border-green-700 rounded text-green-200 hover:border-green-400 transition-colors duration-300 text-sm shadow-[0_0_15px_rgba(0,255,100,0.1)]">
+                          <span className="inline-block h-2 w-2 mr-2 rounded-full bg-green-400 animate-pulse"></span>{skill}
                         </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '95%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">iOS</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Android</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">React Native</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    ))}
                   </div>
-                </div>
-              </motion.div>
-              
-              {/* Cloud & DevOps */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="relative overflow-hidden rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] bg-gray-900">
-                  <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="flex-shrink-0 h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                        </svg>
-                      </div>
-                      <h3 className="ml-4 text-xl font-bold text-cyan-300 font-mono">Cloud & DevOps</h3>
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">AWS</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
+                </motion.div>
+                
+                {/* Data & Analytics */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="mb-10"
+                >
+                  <h3 className="text-xl font-mono font-bold mb-4 flex items-center text-yellow-300">
+                    <span className="inline-block w-2 h-2 bg-yellow-400 mr-2 rounded-full"></span>
+                    Data & Analytics
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {['SQL', 'PostgreSQL', 'MongoDB', 'Elasticsearch', 'Data Pipelines', 'Kafka', 'Pandas', 'NumPy', 'Jupyter'].map((skill, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                      >
+                        <div className="py-2 px-4 bg-gray-900 border border-yellow-700 rounded text-yellow-200 hover:border-yellow-400 transition-colors duration-300 text-sm shadow-[0_0_15px_rgba(255,200,0,0.1)]">
+                          <span className="inline-block h-2 w-2 mr-2 rounded-full bg-yellow-400 animate-pulse"></span>{skill}
                         </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Google Cloud</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Terraform</span>
-                          <span className="text-cyan-400 font-mono text-sm">80%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '80%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Docker</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    ))}
                   </div>
-                </div>
-              </motion.div>
-
-              {/* Languages */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="relative overflow-hidden rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] bg-gray-900">
-                  <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="flex-shrink-0 h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                        </svg>
-                      </div>
-                      <h3 className="ml-4 text-xl font-bold text-cyan-300 font-mono">Programming Languages</h3>
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">TypeScript</span>
-                          <span className="text-cyan-400 font-mono text-sm">95%</span>
+                </motion.div>
+                
+                {/* Tools & Methodologies */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-xl font-mono font-bold mb-4 flex items-center text-pink-300">
+                    <span className="inline-block w-2 h-2 bg-pink-400 mr-2 rounded-full"></span>
+                    Tools & Methodologies
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {['Agile', 'Scrum', 'JIRA', 'Confluence', 'GitHub', 'VS Code', 'Figma', 'Postman', 'Debugging'].map((skill, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                      >
+                        <div className="py-2 px-4 bg-gray-900 border border-pink-700 rounded text-pink-200 hover:border-pink-400 transition-colors duration-300 text-sm shadow-[0_0_15px_rgba(255,0,180,0.1)]">
+                          <span className="inline-block h-2 w-2 mr-2 rounded-full bg-pink-400 animate-pulse"></span>{skill}
                         </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '95%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Python</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">C</span>
-                          <span className="text-cyan-400 font-mono text-sm">95%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '95%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Java</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Node.js</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    ))}
                   </div>
-                </div>
-              </motion.div>
-              
-              {/* Frontend */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="relative overflow-hidden rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] bg-gray-900">
-                  <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="flex-shrink-0 h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <h3 className="ml-4 text-xl font-bold text-cyan-300 font-mono">Frontend Development</h3>
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">React</span>
-                          <span className="text-cyan-400 font-mono text-sm">95%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '95%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">Angular</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">HTML5/CSS</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">D3.js</span>
-                          <span className="text-cyan-400 font-mono text-sm">80%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '80%' }}></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-              
-              {/* Databases */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1.0 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="relative overflow-hidden rounded-lg border border-cyan-500 shadow-[0_0_20px_rgba(0,255,255,0.15)] bg-gray-900">
-                  <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 mix-blend-overlay pointer-events-none"></div>
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="flex-shrink-0 h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                        </svg>
-                      </div>
-                      <h3 className="ml-4 text-xl font-bold text-cyan-300 font-mono">Databases</h3>
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">PostgreSQL</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">MySQL</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">MongoDB</span>
-                          <span className="text-cyan-400 font-mono text-sm">90%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-300 font-mono text-sm">DynamoDB</span>
-                          <span className="text-cyan-400 font-mono text-sm">85%</span>
-                        </div>
-                        <div className="w-full bg-gray-800 rounded-full h-1.5">
-                          <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </div>
             </div>
+            
+            {/* Computer Terminal Animation */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-16 relative overflow-hidden bg-gray-900 rounded-lg border border-cyan-500 shadow-[0_0_30px_rgba(0,255,255,0.2)]"
+            >
+              <div className="flex items-center bg-gray-950 border-b border-cyan-700 p-2">
+                <div className="flex space-x-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div className="mx-auto text-xs text-cyan-300 font-mono">terminal@brucemetro:~</div>
+              </div>
+              <div className="p-4 font-mono text-sm text-cyan-300">
+                <div className="flex">
+                  <span className="text-green-400 mr-2">$</span>
+                  <span className="typing-animation"> analyzing skill proficiency levels...</span>
+                </div>
+                <div className="mt-2">
+                  <div className="mb-2">
+                    <span className="text-pink-400">C/C++:</span> 
+                    <div className="mt-1 h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "90%" }}
+                        transition={{ duration: 1, delay: 0.8 }}
+                        viewport={{ once: true }}
+                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
+                      ></motion.div>
+                    </div>
+                  </div>
+                  <div className="mb-2">
+                    <span className="text-pink-400">Embedded Systems:</span> 
+                    <div className="mt-1 h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "85%" }}
+                        transition={{ duration: 1, delay: 0.9 }}
+                        viewport={{ once: true }}
+                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
+                      ></motion.div>
+                    </div>
+                  </div>
+                  <div className="mb-2">
+                    <span className="text-pink-400">React & JavaScript:</span> 
+                    <div className="mt-1 h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "80%" }}
+                        transition={{ duration: 1, delay: 1 }}
+                        viewport={{ once: true }}
+                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
+                      ></motion.div>
+                    </div>
+                  </div>
+                  <div className="mb-2">
+                    <span className="text-pink-400">Python:</span> 
+                    <div className="mt-1 h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "88%" }}
+                        transition={{ duration: 1, delay: 1.1 }}
+                        viewport={{ once: true }}
+                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
+                      ></motion.div>
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-pink-400">Cloud Technologies:</span> 
+                    <div className="mt-1 h-2 w-full bg-gray-800 rounded-full overflow-hidden">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "75%" }}
+                        transition={{ duration: 1, delay: 1.2 }}
+                        viewport={{ once: true }}
+                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
+                      ></motion.div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4 flex">
+                  <span className="text-green-400 mr-2">$</span>
+                  <span> skills.summary(): <span className="text-cyan-400">Versatile engineer with strong focus on embedded systems and modern web technologies.</span></span>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
@@ -941,17 +1050,17 @@ const Home = () => {
                 <div className="mt-10">
                   <h3 className="text-xl font-bold text-cyan-300 font-mono mb-4">// Connect</h3>
                   <div className="flex space-x-4">
-                    <a href="https://github.com/techgiganet" target="_blank" rel="noopener noreferrer" className="h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700 hover:bg-cyan-800/40 transition-colors">
+                    <a href="https://github.com/subarudad" target="_blank" rel="noopener noreferrer" className="h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700 hover:bg-cyan-800/40 transition-colors">
                       <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
                       </svg>
                     </a>
-                    <a href="https://linkedin.com/in/brucenguyen" target="_blank" rel="noopener noreferrer" className="h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700 hover:bg-cyan-800/40 transition-colors">
+                    <a href="https://linkedin.com/in/bruce-nguyen-4707b7/" target="_blank" rel="noopener noreferrer" className="h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700 hover:bg-cyan-800/40 transition-colors">
                       <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                       </svg>
                     </a>
-                    <a href="https://twitter.com/techgiganet" target="_blank" rel="noopener noreferrer" className="h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700 hover:bg-cyan-800/40 transition-colors">
+                    <a href="https://twitter.com/innoculou" target="_blank" rel="noopener noreferrer" className="h-12 w-12 bg-cyan-900/40 rounded-full flex items-center justify-center text-cyan-400 border border-cyan-700 hover:bg-cyan-800/40 transition-colors">
                       <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                       </svg>
