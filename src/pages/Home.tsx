@@ -466,7 +466,7 @@ const Home = () => {
                   <img 
                     src="/images/project1.png" 
                     alt="CodeMatchPro" 
-                    className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
+                    className="w-full h-48 object-contain bg-gray-900 filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2 text-cyan-300 font-mono group-hover:text-cyan-400 transition-colors duration-300">CodeMatchPro</h3>
@@ -550,7 +550,7 @@ const Home = () => {
                     <span className="text-cyan-400 font-mono text-xs">03</span>
                   </div>
                   <img 
-                    src="/images/project3.jpg" 
+                    src="/images/project3.png" 
                     alt="Simple One Realty" 
                     className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
@@ -595,7 +595,7 @@ const Home = () => {
                   <img 
                     src="/images/project4.png" 
                     alt="EasyTask" 
-                    className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
+                    className="w-full h-48 object-contain bg-gray-900 filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2 text-cyan-300 font-mono group-hover:text-cyan-400 transition-colors duration-300">EasyTask App</h3>
@@ -638,7 +638,7 @@ const Home = () => {
                   <img 
                     src="/images/project5.png" 
                     alt="Medical Device BLE Integration" 
-                    className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
+                    className="w-full h-48 object-contain bg-gray-900 filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2 text-cyan-300 font-mono group-hover:text-cyan-400 transition-colors duration-300">Medical Device BLE Integration</h3>
