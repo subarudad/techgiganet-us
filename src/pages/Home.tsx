@@ -464,7 +464,7 @@ const Home = () => {
                     <span className="text-cyan-400 font-mono text-xs">01</span>
                   </div>
                   <img 
-                    src="/images/project1.jpg" 
+                    src="/images/project1.png" 
                     alt="CodeMatchPro" 
                     className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
@@ -507,7 +507,7 @@ const Home = () => {
                     <span className="text-cyan-400 font-mono text-xs">02</span>
                   </div>
                   <img 
-                    src="/images/project2.jpg" 
+                    src="/images/project2.png" 
                     alt="Trump Market Trends" 
                     className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
@@ -593,7 +593,7 @@ const Home = () => {
                     <span className="text-cyan-400 font-mono text-xs">04</span>
                   </div>
                   <img 
-                    src="/images/project4.jpg" 
+                    src="/images/project4.png" 
                     alt="EasyTask" 
                     className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
@@ -636,7 +636,7 @@ const Home = () => {
                     <span className="text-cyan-400 font-mono text-xs">05</span>
                   </div>
                   <img 
-                    src="/images/project5.jpg" 
+                    src="/images/project5.png" 
                     alt="Medical Device BLE Integration" 
                     className="w-full h-48 object-cover object-center filter brightness-75 group-hover:brightness-100 transition-all duration-300"
                   />
